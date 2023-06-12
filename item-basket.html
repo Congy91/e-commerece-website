@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/paint-palette.png">
+
+    <title>Home - ArtFusion</title>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center text-center" id="toppage">
+        <a class="display-4 text-dark text-decoration-none text-center" href="index.html"><img
+                src="images/paint-palette.png" width="50" height="50" class="img-fluid" alt="">
+            ArtFusion</a>
+    </header>
+    <!--Navigaton Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Artwork
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-body" href="#feature">Feature</a>
+                        <a class="dropdown-item text-body" href="filtered-view.html">Abstract Art</a>
+                        <a class="dropdown-item text-body" href="filtered-view.html">Digital Art</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav shopping-cart">
+                <li class="nav-item">
+                    <a href="/item-basket.html" type="button" class="btn btn-warning cart-button" role="button">
+                        <img src="images/shopping-cart.png" width="25" height="25" class="cart-img"
+                            alt="icon for shopping cart">
+                        <span class="badge badge-light">3</span>
+                        <span class="badge badge-light">$89.65</span>
+                        <span class="sr-only">Items in shopping cart</span>
+                    </a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="container mt-5">
+            <h2>Your Basket</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ArtWork 345</td>
+                        <td>$35.05</td>
+                        <td>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </td>
+                        <td>$35.05</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ArtWork 295</td>
+                        <td>$25.60</td>
+                        <td>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </td>
+                        <td>$60.65</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ArtWork 855</td>
+                        <td>$29.00</td>
+                        <td>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </td>
+                        <td>$89.65</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td><strong>Total: $89.65</strong></td>
+                        <td>
+                            <a class="btn btn-warning" href="checkout.html">Checkout</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="artwork-display" id="feature">
+            <h4 class="border-bottom border-grey w-75 mx-auto heading text-center">Featured
+                Items</h4>
+            <div class="album py-5 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm rounded">
+                                <img src="images/template_img.jpg" alt="place holder image" class="buy-img">
+                                <div class="card-body">
+                                    <a href="puduct-page.html" class="text-center text-dark text-decoration-none">
+                                        <h5>Light Blub</h5>
+                                    </a>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-0 text-secondary">Radiating warmth and illumination, a
+                                            mesmerizing
+                                            lightbulb painting captures the ethereal glow that symbolizes creativity
+                                            and
+                                            bright ideas. The intricate brushwork and vibrant colors bring to life
+                                            the
+                                            delicate balance between innovation and inspiration.
+                                        </p>
+                                        <footer class="blockquote-footer text-right">
+                                            <cite title="Source">Davinci</cite>
+                                        </footer>
+                                    </blockquote>
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <div class="btn-group mb-3">
+                                            <button type="button buy-button"
+                                                class="btn btn-sm btn-outline-warning">$35.99</button>
+                                        </div>
+                                        <div class="rating d-block">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 feature-card">
+                            <div class="card mb-4 shadow-sm rounded">
+                                <img src="images/template_img.jpg" alt="place holder image" class="buy-img">
+                                <div class="card-body">
+                                    <a href="puduct-page.html" class="text-center text-dark text-decoration-none">
+                                        <h5>Light Blub</h5>
+                                    </a>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-0 text-secondary">Radiating warmth and illumination, a
+                                            mesmerizing
+                                            lightbulb painting captures the ethereal glow that symbolizes creativity
+                                            and
+                                            bright ideas. The intricate brushwork and vibrant colors bring to life
+                                            the
+                                            delicate balance between innovation and inspiration.
+                                        </p>
+                                        <footer class="blockquote-footer text-right">
+                                            <cite title="Source">Davinci</cite>
+                                        </footer>
+                                    </blockquote>
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <div class="btn-group mb-3">
+                                            <button type="button buy-button"
+                                                class="btn btn-sm btn-outline-warning">$35.99</button>
+                                        </div>
+                                        <div class="rating d-block">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-half text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 feature-card">
+                            <div class="card mb-4 shadow-sm rounded">
+                                <img src="images/template_img.jpg" alt="place holder image" class="buy-img">
+                                <div class="card-body">
+                                    <a href="puduct-page.html" class="text-center text-dark text-decoration-none">
+                                        <h5>Light Blub</h5>
+                                    </a>
+                                    <blockquote class="blockquote">
+                                        <p class="mb-0 text-secondary">Radiating warmth and illumination, a
+                                            mesmerizing
+                                            lightbulb painting captures the ethereal glow that symbolizes creativity
+                                            and
+                                            bright ideas. The intricate brushwork and vibrant colors bring to life
+                                            the
+                                            delicate balance between innovation and inspiration.
+                                        </p>
+                                        <footer class="blockquote-footer text-right">
+                                            <cite title="Source">Davinci</cite>
+                                        </footer>
+                                    </blockquote>
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <div class="btn-group mb-3">
+                                            <button type="button buy-button"
+                                                class="btn btn-sm btn-outline-warning">$35.99</button>
+                                        </div>
+                                        <div class="rating d-block">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-half text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div>
+        <p class="bg-warning p-2 text-center m-0"><a href="#toppage"
+                class="text-decoration-none display-5 text-dark">Back to
+                Top</a>
+        </p>
+    </div>
+    <footer class="bg-light p-4 text-center m-0">
+        <p>© 1996-2023, ArtFusion.com, Inc. or its affiliates</p>
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
+        <li class="list-inline-item"><a href="aboutus.html">About Us</a></li>
+        <li class="list-inline-item"><a href="contactus.html">Support</a></li>
+    </footer>
+
+
+
+    <!--JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
