@@ -1,5 +1,3 @@
-# e-commerece-website
-
 # E-Commerce Website Template
 
 ![Website Preview](website_preview.png)
